@@ -20,7 +20,7 @@ function Yazi({ id, url, baslik, yazar, yorum_sayisi, puan }) {
   return (
     <li key={id}>
       <span>
-        <a href={url}>{baslik}</a>,
+        <a href={url} target="_blank">{baslik}</a>,
       </span>
       <span>
         <b>Yazar:</b> {yazar},{" "}
@@ -58,7 +58,7 @@ function App() {
   const yaziListesi = [
     {
       baslik: "React Öğreniyorum",
-      url: "www.sdu.edu.tr",
+      url: "https://w3.sdu.edu.tr/",
       yazar: "Sinan Yüksel",
       yorum_sayisi: 3,
       puan: 4,
@@ -66,7 +66,7 @@ function App() {
     },
     {
       baslik: "Web Teknolojileri ve Programlama",
-      url: "wwww.google.com.tr",
+      url: "https://www.google.com/",
       yazar: "Asım Yüksel",
       yorum_sayisi: 2,
       puan: 5,
@@ -74,23 +74,23 @@ function App() {
     },
     {
       baslik: "React Native",
-      url: "wwww.google.com.tr",
+      url: "https://github.com/avcialper",
       yazar: "Alper Avcı",
       yorum_sayisi: 20,
       puan: 4.5,
       id: 2,
     },
     {
-      baslik: "React Native",
-      url: "wwww.google.com.tr",
-      yazar: "Zekican Dönmez",
+      baslik: "Medium",
+      url: "https://medium.com/@avcialper",
+      yazar: "Alper Avcı",
       yorum_sayisi: 2,
       puan: 5,
       id: 3,
     },
     {
-      baslik: "Java",
-      url: "wwww.google.com.tr",
+      baslik: "Yazılım Bilimi",
+      url: "https://www.youtube.com/@YazilimBilimiAnkara",
       yazar: "Mustafa Murat Coşkun",
       yorum_sayisi: 200,
       puan: 5,
@@ -98,7 +98,7 @@ function App() {
     },
     {
       baslik: "C#",
-      url: "wwww.google.com.tr",
+      url: "https://www.youtube.com/@engindemirog2946",
       yazar: "Engin Demiroğ",
       yorum_sayisi: 2232,
       puan: 5,
@@ -106,7 +106,7 @@ function App() {
     },
     {
       baslik: "Bilgisayar Kavramları",
-      utl: "www.google.com.tr",
+      url: "https://www.youtube.com/@Sadievrenseker_BK",
       yazar: "Şadi Evren Şeker",
       yorum_sayisi: 5032,
       puan: 5,
